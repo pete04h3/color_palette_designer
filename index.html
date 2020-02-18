@@ -3,7 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Color Palette Designer</title>
   </head>
-  <body></body>
+  <body>
+    <form id="buttons">
+      <input id="Analogous" class="option" type="radio" name="colortype" value="Analogous" />
+      <input id="Monochromatic" class="option" type="radio" name="colortype" value="Monochromatic" />
+      <input id="Triad" class="option" type="radio" name="Triad" value="Triad" />
+      <input id="Complementary" class="option" type="radio" name="colortype" value="Complementary" />
+      <input id="Compound" class="option" type="radio" name="colortype" value="Compound" />
+      <input id="Shades" class="option" type="radio" name="colortype" value="Shades" />
+    </form>
+
+  
+        <div id="container">
+          <label> Select color <input id="color_picker" type="color"/></label>
+
+          <div id="color"></div>
+         
+          <p id="hex"></p>
+          <p id="rgb"></p>
+          <p id="hsl"></p>
+        
+
+
+        <script src="script.js"></script>
+      </body>
+    </html>
+  </body>
+  <script src="script.js"></script>
 </html>

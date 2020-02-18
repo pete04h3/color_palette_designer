@@ -3,3 +3,65 @@
   padding: 0;
   margin: 0;
 }
+
+form {
+  display: flex;
+  flex-basis: 1;
+}
+
+input[type="radio"] {
+  margin-bottom: 10px;
+}
+
+#buttons {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 1;
+  padding: 20px;
+}
+
+:root {
+  --selected_color: black;
+}
+
+html {
+  color: aliceblue;
+}
+
+p {
+  text-align: center;
+}
+
+input {
+  cursor: pointer;
+  margin-top: 10px;
+  background-color: #3f4041;
+}
+
+label {
+  margin-top: 10px;
+}
+
+#container {
+  text-align: center;
+  width: 20%;
+  height: 400px;
+  border-radius: 5px;
+  box-shadow: black;
+  background-color: #3f4041;
+}
+
+#color {
+  margin: 0 auto;
+  width: 200px;
+  height: 150px;
+  background-color: var(--selected_color);
+  border: 1px solid azure;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+p {
+  padding: 2px;
+  margin-top: 10px;
+}

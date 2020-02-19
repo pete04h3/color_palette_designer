@@ -28,10 +28,10 @@ form {
 
 #colorselectorbox {
   margin: 0 auto;
-  width: 1500px;
   display: grid;
   border-top-style: groove;
   border-bottom-style: groove;
+  margin-top: 100px;
 }
 
 #buttons {
@@ -47,7 +47,6 @@ form {
 
 .color_box {
   width: 200px;
-  height: 400px;
   padding: 1px;
 }
 

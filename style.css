@@ -7,8 +7,6 @@ html {
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
   background-color: rgba(228, 226, 213, 0.329);
   margin-top: 15px;
 }

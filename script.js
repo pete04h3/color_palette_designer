@@ -11,7 +11,7 @@ function start() {
   console.log(start);
 
   HTML.colorPicker = document.querySelector("#color_picker");
-  HTML.colorContainer = document.querySelector("#color");
+  HTML.colorContainer = document.querySelector(".color_3");
 
   HTML.colorPicker.addEventListener("change", showColor);
 }

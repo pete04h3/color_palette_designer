@@ -6,74 +6,59 @@
     <link rel="stylesheet" href="style.css" />
     <title>Color Palette Designer</title>
   </head>
+
   <body>
-    <form id="buttons">
-      <label class="labelname">Analogous <input id="Analogous" class="option" type="radio" name="colortype" value="Analogous" /></label>
-      <label class="labelname">Monochromatic <input id="Monochromatic" class="option" type="radio" name="colortype" value="Monochromatic" /> </label>
-      <label class="labelname">Triad <input id="Triad" class="option" type="radio" name="Triad" value="Triad" /> </label>
-      <label class="labelname">Complementary <input id="Complementary" class="option" type="radio" name="colortype" value="Complementary" /></label> 
-      <label class="labelname">Compound <input id="Compound" class="option" type="radio" name="colortype" value="Compound" /> </label> 
-      <label class="labelname">Shades <input id="Shades" class="option" type="radio" name="colortype" value="Shades" /> </label> 
-    </form>
-   <div class="selectcolorbox"><label class="selectcolortxt"> Select Color <input id="color_picker" type="color"/></label></div> 
-  
-        <div id="container">
-         
+    <div id="colorselectorbox">
+      <h1>Color Palette Designer</h1>
+      <label>Select your base color: <input id="color_picker" type="color"/></label>
+      <h2>Select your color harmony:</h2>
+      <form id="buttons">
+        <label class="labeltxt" for="analogous"><input type="radio" name="color_type" id="analogous" value="analogous" /> Analogous</label>
+        <label class="labeltxt" for="monochromatic"><input type="radio" name="color_type" id="monochromatic" value="monochromatic" /> Monochromatic</label>
+        <label class="labeltxt" for="triad"><input type="radio" name="color_type" id="triad" value="triad" /> Triad</label>
+        <label class="labeltxt" for="complementary"><input type="radio" name="color_type" id="complementary" value="complementary" /> Complementary</label>
+        <label class="labeltxt" for="compound"><input type="radio" name="color_type" id="compound" value="compound" /> Compound</label>
+        <label class="labeltxt" for="shades"><input type="radio" name="color_type" id="shades" value="shades" /> Shades</label>
+      </form>
 
-          <div id="color" class="color_1"></div>
-          <div class="textwrapper">
-         
-          <p id="hex"></p>
-          <p id="rgb"></p>
-          <p id="hsl"></p>
-
+      <div class="color_container">
+        <div class="color_box_1 color_box">
+          <div class="color_1"></div>
+          <p class="hex">HEX: #000000</p>
+          <p class="rgb">RGB(0, 0, 0)</p>
+          <p class="hsl">HSL(0, 0%, 0%)</p>
         </div>
 
-          <div id="color" class="color_2"></div>
-          <div class="textwrapper">
-         
-          <p id="hex"></p>
-          <p id="rgb"></p>
-          <p id="hsl"></p>
-
+        <div class="color_box_2 color_box">
+          <div class="color_2"></div>
+          <p class="hex">HEX: #000000</p>
+          <p class="rgb">RGB(0, 0, 0)</p>
+          <p class="hsl">HSL(0, 0%, 0%)</p>
         </div>
 
-          <div id="color" class="color_3"></div>
-          <div class="textwrapper">
-         
-         
-          <p id="hex"></p>
-          <p id="rgb"></p>
-          <p id="hsl"></p>
+        <div class="color_box_3 color_box">
+          <div class="base_color"></div>
+          <p class="hex">HEX: #000000</p>
+          <p class="rgb">RGB(0, 0, 0)</p>
+          <p class="hsl">HSL(0, 0%, 0%)</p>
+        </div>
 
-          </div>
+        <div class="color_box_4 color_box">
+          <div class="color_4"></div>
+          <p class="hex">HEX: #000000</p>
+          <p class="rgb">RGB(0, 0, 0)</p>
+          <p class="hsl">HSL(0, 0%, 0%)</p>
+        </div>
 
-          <div id="color" class="color_4"></div>
-          <div class="textwrapper">
-         
-         
-          <p id="hex"></p>
-          <p id="rgb"></p>
-          <p id="hsl"></p>
+        <div class="color_box_5 color_box">
+          <div class="color_5"></div>
+          <p class="hex">HEX: #000000</p>
+          <p class="rgb">RGB(0, 0, 0)</p>
+          <p class="hsl">HSL(0, 0%, 0%)</p>
+        </div>
+      </div>
+    </div>
 
-          </div>
-
-          <div id="color" class="color_5"></div>
-          <div class="textwrapper">
-         
-         
-          <p id="hex"></p>
-          <p id="rgb"></p>
-          <p id="hsl"></p>
-
-          </div>
-          </div>
-        
-
-
-        <script src="script.js"></script>
-      </body>
-    </html>
+    <script src="script.js"></script>
   </body>
-  <script src="script.js"></script>
 </html>
